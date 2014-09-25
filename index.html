@@ -6,18 +6,70 @@
 	<style>
 body { 
 	background-image: url(triangular.png);
-	color: white;
+	color: #555;
 
 	font-family: 'Open Sans', sans-serif;
 }
 
 .box {
-	width: 80%;
+	width: 48%;
+	padding: 1%;
+	padding-top: 5px;
+	padding-bottom: 25px;
 
 	margin-left: auto;
 	margin-right: auto;
 
-	background-color: rgba(0, 151, 255, 0.5);
+	background-color: white;
+
+	border-radius: 2px;
+	box-shadow: 0em 0.1em 0.5em rgba(0, 0, 0, 0.15);
+	text-shadow: 0px 1px 2px rgba(30, 30, 30, 0.015);
+}
+
+.box > p {
+	background-color: rgba(0, 0, 0, 0.1);
+
+	padding: 1%;
+	border-radius: 2px;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+	display: inline-block;
+	width: 100%;
+
+	text-align: center;
+}
+
+.nav {
+	width: 100%;
+	text-align: center;
+}
+
+.nav > a {
+	display: inline-block;
+
+	background-color: #8AD7FF;
+
+	color: white;
+	text-decoration: none;
+
+	width: 6em;
+	height: 2em;
+	line-height: 2em;
+
+	border-radius: 2px;
+
+	box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+
+	font-size: 0.8em;
+	color: #888;
 }
 
 	</style>
@@ -25,6 +77,14 @@ body {
 <body>
 	<div class="box">
 		<h1>Welcome to Titan Studio's Homepage</h1>
+		<div class="nav">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Projects</a>
+			<a href="#">Members</a>
+			<a href="#">Contact Us</a>
+		</div>
 		<p>Titan Studio is a newly formed organization dedicated to developing the open-source 3D game engine named Coeus. We have been developing Coeus in secret in our basements for a few months now and have decided to allow it to see the light of day. Enjoy!</p>
 	</div>
+	<div class="footer">Copyright &copy; Titan Studio 2014</div>
 </body>
